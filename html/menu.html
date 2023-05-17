@@ -1,0 +1,67 @@
+<div hidden>
+    <div class="card mx-3 my-3 ShadowTransition" id="card-template-menu" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="card-title h5">Блюдо</div>
+            <div class="card-text h6 mb-2 text-muted">Категория блюд - </div>
+            <div class="card text-center">
+                <input id="star-rating" name="star-rating" class="rating rating-loading" data-show-clear="false" data-show-caption="false" data-readonly="false">
+            </div>
+            <div class="card-description p">Описание</div>
+        </div>
+        <div class="card-footer">
+            <div class="container">
+                <div class="row row-cols-3 align-items-center justify-content-between">
+                    <div class="col" id="card-price">Цена - </div>
+                    <button id="addToBasketButton" class="col-6 btn btn-primary">В корзину</button>
+                    <input id="numberDishInBasket" type="number" min="0" value="1" class="col d-none">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    <div class="card" id="menuCard">
+        <div class="card" id="sortCard">
+            <div class="row align-items-center mb-2 mt-2 ms-3 me-2">
+                <div class="col">
+                    <select multiple id="selectCategories" class="form-select" aria-label="Categories select">
+                        <option selected>All</option>
+                        <option id="Wok">Wok</option>
+                        <option id="Pizza">Pizza</option>
+                        <option id="Soup">Soup</option>
+                        <option id="Dessert">Dessert</option>
+                        <option id="Drink">Drink</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select id="selectSorting" class="form-select" aria-label="Sorting select">
+                        <option id="NameAsc" value="NameAsc">А-Я</option>
+                        <option id="NameDesc" value="NameDesc">Я-А</option>
+                        <option id="PriceAsc" value="PriceAsc">По возрастанию цены</option>
+                        <option id="PriceDesc" value="PriceDesc">По убыванию цены</option>
+                        <option id="RatingAsc" value="RatingAsc">По возрастанию рейтинга</option>
+                        <option id="RatingDesc" value="RatingDesc" selected>По убыванию рейтинга</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="switch">
+                        <input id="selectVegetarian" type="checkbox" name="Vegetarian">
+                        <span class="slider round"></span>
+                    </label>
+                    <label class="form-label">Показать только вегетарианское</label>
+                </div>
+                <div class="col d-flex flex-row-reverse">
+                    <button class="btn btn-primary" id="applyButton" type="button">Применить</button>
+                </div>
+            </div>
+        </div>
+        <div id="menu-container" class="row justify-content-center pg-0"></div>
+    </div>
+    
+    <ul class="page-list list-group list-group-horizontal justify-content-center my-2">
+        <li class="list-group-item menu-page" type="button">1</li>
+    </ul>
+</div>
+

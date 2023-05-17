@@ -1,0 +1,44 @@
+<div class="profile d-none">
+    <div class="card">
+        <div class="card-body row align-items-center">
+            <div>
+                <h1 id="profileName"></h1>
+                <form id="profile-form">
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">ФИО</label>
+                        <input readonly name="fio" type="text" class="form-control" id="profileFIO">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
+                        <input readonly name="email" type="text" class="form-control" id="profileEmail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Дата рождения</label>
+                        <input readonly name="dob" type="date" class="form-control" id="profileDOB">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Пол</label>
+                        <input readonly name="gender" type="text" class="form-control" id="profileGender">
+                        <select readonly name="gender" type="select" class="form-control d-none" id="profileGenderEdit">
+                            <option>Мужской</option>
+                            <option>Женский</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Адрес</label>
+                        <input readonly name="address" type="text" class="form-control" id="profileAddress">
+                    </div>
+                    <div class="mb-3">
+                        <label for="typePhone" class="form-label fw-bold">Телефон</label>
+                        <input readonly name="phone" type="tel" pattern="^\+7 \([0-9]{3}\) [0-9]{3}\-[0-9]{2}\-[0-9]{2}$" class="form-control" id="profilePhoneNumber" required>
+                    </div>
+                    <div class="d-flex">
+                        <button id="editProfileButton" class="btn btn-warning fw-bolder">Редактировать</button>
+                        <button id="saveProfileButton" type="submit" class="btn btn-primary d-none fw-bolder">Сохранить</button>
+                        <div class="text-danger my-auto ms-3" id="profileError"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

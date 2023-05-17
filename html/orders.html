@@ -1,0 +1,39 @@
+<div hidden>
+    <div class="card row row-cols-auto mx-3 my-3 ShadowTransition" id="card-template-orders">
+        <div class="d-flex flex-row align-items-start" style="padding-inline: 30px; padding-bottom: 5px; padding-top: 5px">
+            <div class="col">
+                <div class="row">
+                    <text id="orderDate" style="text-decoration: underline"></text>
+                </div>
+                <div class="row">
+                    <text id="orderStatus"></text>
+                </div>
+                <div class="row">
+                    <text id="deliveryTime" class=""></text>
+                    <text id="deliveredDateTime" class="d-none"></text>
+                </div>
+            </div>
+            <div class="flex-row-reverse">
+                <div class="row">
+                    <button id="confirmDeliveryButton" class="btn btn-success"></button>
+                </div>
+                <div class="row">
+                    <text id="orderPrice"></text>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="conteiner">
+    <div class="d-flex flex-row align-items-center" id="createOrderCard">
+        <div class="col">В корзине есть блюда, можно оформить заказ.</div>
+        <div class="flex-row-reverse">
+                <button id="createOrderButton" class="btn btn-success">Оформить</button>
+        </div>
+    </div>
+    <h3 id="lastOrders">Последние заказы</h3>
+    <div class="order row">
+        
+    </div>
+</div>
